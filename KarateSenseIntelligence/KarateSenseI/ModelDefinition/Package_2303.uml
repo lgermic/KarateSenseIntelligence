@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="e68dd3de-36bd-49be-be24-14c9f70bc876"
+  name="NeuronDataReaderWraper" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="5dc9d460-5dba-4966-b607-7b1f7384ecc7"
+        name="PNSensor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="d3a4dbd2-4753-4a90-95c9-8daa4c3695ee"
+            name="bvhData::"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="08a9b0eb-c07b-4ee5-b254-e01eced58ee9"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c11fc831-a6c1-4f80-9ad5-bb646035c8a7"
+            name="readBVH"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e77e08de-7005-4f8e-952c-2470408b3b9d"
+            name="isFrameUpdated"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="4e427dcd-979d-4546-8cfa-7c8284c319dd"
+        name="SocketStatus"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="da0d94ca-01b6-492f-b8be-cd38546c6c67"
+            name="CS_Running" />
+          <enumerationLiteral
+            Id="5f3e2738-ca08-4f25-9870-a6fe3dc88649"
+            name="CS_Starting" />
+          <enumerationLiteral
+            Id="671a6dde-f90e-4273-ac34-f4d5d452ece5"
+            name="CS_OffWork" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="990b06c3-4e56-4dfc-b336-f91ff5070799"
+        name="DataVersion"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="27ba0eb5-8453-4a5c-8320-59bb295bec9a"
+            name="BuildNumb:byte" />
+          <enumerationLiteral
+            Id="98eb3f0e-fb81-4440-a4e3-301bcfc34953"
+            name="Revision:byte" />
+          <enumerationLiteral
+            Id="6c9bcc83-b882-47ac-9f8c-06b696348e05"
+            name="Minor:byte" />
+          <enumerationLiteral
+            Id="c19a0eea-5707-4060-911a-908b069464c2"
+            name="Major:byte" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

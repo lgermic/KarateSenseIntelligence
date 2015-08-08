@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="14a1e4a6-825a-4e3a-8562-48347b65656a" name="UMLUseCaseDiagram1" linkedPackageId="29b3571d-07fc-4b40-8872-8bc8c423a206" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="9be598dc-5f42-47b3-9246-294155d59061">
+      <elementDefinition Id="80414977-0138-47bc-b849-2b95a3e1a508" />
+    </comment>
+    <comment Id="e72b2c0e-7cbf-4b4d-a517-7b873e4c4cc7">
+      <elementDefinition Id="9bb2ee41-945c-455a-888a-3095bfaa46e5" />
+    </comment>
+    <comment Id="1ee625e2-dfc5-41fb-866f-b7f4b88e4039">
+      <elementDefinition Id="89131ed5-8b01-4432-945d-98285d33ea1e" />
+      <body>depends</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="9c77aef1-beff-4ee1-bd78-c3200450fc4e" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a65b0983-27c9-46c0-82dc-e9a108bbdefd" />
+        <targetEnds>
+          <association Id="86b3a988-9028-43f8-9cf0-f79932fa4bf1" isDerived="false" sourceEndRoleName="Actor3" targetEndRoleName="MotionCapturing" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4108cb58-3180-4464-84b4-2c9fcaa20cf4" LastKnownName="Capture Motion" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9fffe5fa-dba7-444a-830c-1c55de218620" name="Actor3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d68caa22-eaac-454e-af33-f251eaad4a11" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="52c4cd56-af42-4532-9fbf-3abb1ccd3970" name="MotionCapturing" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f575c9b0-3a10-4f6a-98c7-2a5fae91d7b8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f40fd0c5-2f96-48cd-b5ad-f7c04c270ee3" />
+          </association>
+          <association Id="c1afa2a3-61d1-4dad-880c-13e75d25c889" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Visualize" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="59679f89-300e-4956-b7b8-c56d470dadde" LastKnownName="Visualize" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1bd2a22d-d843-42fe-8562-c203219a3484" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0d8c5f84-6f67-435e-9901-f88ece75a1a8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7a8b123c-2703-4144-b2c1-15fb612123eb" name="Visualize" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3f6b1e24-1af7-41c7-9643-ecb9be0b7aef" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="54b50513-c1dc-4a4b-9154-fec644edec05" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="5f3c9856-70e5-417f-87d8-9345da0b33bc" name="KarateSenseIntelligenceCore" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="78c74d60-738e-41d2-8291-64d8da8cd786" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="7ae723a7-91f9-4738-aff9-797035ac3f70" name="AXIS Neuron" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="518d3b4e-ba18-42cc-8b2a-18a51ce2f21c" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="4108cb58-3180-4464-84b4-2c9fcaa20cf4" name="Capture Motion" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9c0e01a3-58a0-4fd0-ab60-7bcf2ac06b6b" />
+        <generalsInternal>
+          <generalization Id="d5f25bd4-f342-4332-aa9f-a175321a8fcf" isSubstitutable="false">
+            <useCaseMoniker Id="1fb5b85a-e3e4-42b0-ba7e-03170fb5a889" LastKnownName="motion data" />
+            <elementDefinition Id="7e575d23-7ef8-456e-b3b4-39b59bf506f3" />
+          </generalization>
+        </generalsInternal>
+        <additions>
+          <include Id="3b9517b1-53f7-4826-888e-133acfec38de">
+            <useCaseMoniker Id="d79fffa2-e7c8-4782-ad73-f1e68d91a1d8" LastKnownName="Reconstruction 3D Frame" />
+            <elementDefinition Id="8598e705-21de-4e72-b5d7-fa6b2fd75dc1" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="5f3c9856-70e5-417f-87d8-9345da0b33bc" LastKnownName="KarateSenseIntelligenceCore" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="d79fffa2-e7c8-4782-ad73-f1e68d91a1d8" name="Reconstruction 3D Frame" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a88ba4b1-d559-4a16-ab9b-6a0d8d94bf75" />
+        <additions>
+          <include Id="cf7b71a3-e8bc-4ccf-ac07-e8190043b461">
+            <useCaseMoniker Id="3c786599-11c2-4b81-a0b6-eb113fa2d6ce" LastKnownName="Reconstruct motion data" />
+            <elementDefinition Id="97e18bc7-b74f-4e5c-86f9-7f17fdd337f7" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="5f3c9856-70e5-417f-87d8-9345da0b33bc" LastKnownName="KarateSenseIntelligenceCore" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="3c786599-11c2-4b81-a0b6-eb113fa2d6ce" name="Reconstruct motion data" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="397af0d3-9daa-440d-9cb0-c2b03452e3fe" />
+        <subjects>
+          <subsystemMoniker Id="7ae723a7-91f9-4738-aff9-797035ac3f70" LastKnownName="AXIS Neuron" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="167759dd-d11f-4ca6-bd4d-610b322f0c12" name="Reconstruct Surface data" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ad23b8c3-706a-4d05-abba-8242c9b08a60" />
+        <extendedCases>
+          <extend Id="864a0a40-a59a-4b23-9f73-4ffc887826b1">
+            <useCaseMoniker Id="d79fffa2-e7c8-4782-ad73-f1e68d91a1d8" LastKnownName="Reconstruction 3D Frame" />
+            <description>if kinect surface reconstruction is enabled</description>
+            <elementDefinition Id="f5ffe458-8430-4c8e-94b1-d42ebcb5e4b5" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="5f3c9856-70e5-417f-87d8-9345da0b33bc" LastKnownName="KarateSenseIntelligenceCore" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="59679f89-300e-4956-b7b8-c56d470dadde" name="Visualize" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cda98a99-93e5-4f56-9ca0-afba5fc80fb5" />
+        <suppliersInternal>
+          <dependency Id="b240f8be-f035-4709-8290-f29286014cd2" name="depends">
+            <useCaseMoniker Id="1fb5b85a-e3e4-42b0-ba7e-03170fb5a889" LastKnownName="motion data" />
+            <elementDefinition Id="8d0fb36c-a225-48cf-bf79-157f107038bb" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="5f3c9856-70e5-417f-87d8-9345da0b33bc" LastKnownName="KarateSenseIntelligenceCore" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="ec897990-40ec-4360-9983-f054f3f05e5f" name="Extract biometrics" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cc1c925a-7454-442a-a00c-b541ed46ebb8" />
+        <generalsInternal>
+          <generalization Id="be12c69f-b9a8-4ce8-adb6-87584a73048f" isSubstitutable="false">
+            <useCaseMoniker Id="9c74ca6c-2ab3-45cf-9192-51f5058c1276" LastKnownName="Analysis of data" />
+            <elementDefinition Id="9143c004-72fc-42ed-9324-d5c504fae230" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker Id="5f3c9856-70e5-417f-87d8-9345da0b33bc" LastKnownName="KarateSenseIntelligenceCore" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="9c74ca6c-2ab3-45cf-9192-51f5058c1276" name="Analysis of data" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ed9c7897-f189-40bc-ad5b-ef7acba71295" />
+        <subjects>
+          <subsystemMoniker Id="5f3c9856-70e5-417f-87d8-9345da0b33bc" LastKnownName="KarateSenseIntelligenceCore" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="aa24c663-0102-4c65-9574-0965483ac65c" name="Extract keyValues  " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="75b75c1f-16f5-4678-9ead-651f99c01201" />
+        <generalsInternal>
+          <generalization Id="0682e4ed-ea84-41ab-972a-e331d559fac0" isSubstitutable="false">
+            <useCaseMoniker Id="9c74ca6c-2ab3-45cf-9192-51f5058c1276" LastKnownName="Analysis of data" />
+            <elementDefinition Id="64380114-f9a8-4020-8d7c-eee731e72714" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker Id="5f3c9856-70e5-417f-87d8-9345da0b33bc" LastKnownName="KarateSenseIntelligenceCore" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="9bfc210b-0e27-4d35-ac40-778ed5c11c09" name="Visualize Motion" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b0f6c833-8fc9-4326-b2cf-21ffbe37eed9" />
+        <generalsInternal>
+          <generalization Id="21924734-218a-41f5-a041-5dca2f5c968f" isSubstitutable="false">
+            <useCaseMoniker Id="59679f89-300e-4956-b7b8-c56d470dadde" LastKnownName="Visualize" />
+            <elementDefinition Id="bb77fee6-c786-4a1b-8e22-42560211d7b5" />
+          </generalization>
+        </generalsInternal>
+        <additions>
+          <include Id="66f3745e-5aa3-485f-9cf3-7dd91e5dd907">
+            <useCaseMoniker Id="d79fffa2-e7c8-4782-ad73-f1e68d91a1d8" LastKnownName="Reconstruction 3D Frame" />
+            <elementDefinition Id="a223537b-86e5-4684-b9cc-8bea184601d1" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="5f3c9856-70e5-417f-87d8-9345da0b33bc" LastKnownName="KarateSenseIntelligenceCore" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="2bcb6ee6-2ba7-4eb0-8f96-bcbb9c2854b0" name="Visualize observables" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f08bfa88-8671-48e5-b04d-9d19e7912d6b" />
+        <generalsInternal>
+          <generalization Id="f681074c-581c-4d56-ab9d-100f6cfcde49" isSubstitutable="false">
+            <useCaseMoniker Id="59679f89-300e-4956-b7b8-c56d470dadde" LastKnownName="Visualize" />
+            <elementDefinition Id="f1ea92da-fd58-46d7-8b07-6dd6dc74fa8b" />
+          </generalization>
+        </generalsInternal>
+        <additions>
+          <include Id="1881d4dc-1e0d-45fb-8581-ee1fea060549">
+            <useCaseMoniker Id="9c74ca6c-2ab3-45cf-9192-51f5058c1276" LastKnownName="Analysis of data" />
+            <elementDefinition Id="a44648d5-0f51-45c1-88d9-c16fe001acf9" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="5f3c9856-70e5-417f-87d8-9345da0b33bc" LastKnownName="KarateSenseIntelligenceCore" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c94b02fe-9ac9-42b5-bcc8-20d11f59d71e" name="Load motion data" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a71de3e4-90bb-46d5-9151-8e314ff4bd63" />
+        <generalsInternal>
+          <generalization Id="dbbe303f-826b-461d-81b5-b466b30d9204" isSubstitutable="false">
+            <useCaseMoniker Id="1fb5b85a-e3e4-42b0-ba7e-03170fb5a889" LastKnownName="motion data" />
+            <elementDefinition Id="b464a5aa-8cab-46bd-9de1-022153fecd27" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker Id="5f3c9856-70e5-417f-87d8-9345da0b33bc" LastKnownName="KarateSenseIntelligenceCore" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="1fb5b85a-e3e4-42b0-ba7e-03170fb5a889" name="motion data" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f144296e-ae81-42cc-9720-0321ab3a177a" />
+        <subjects>
+          <subsystemMoniker Id="5f3c9856-70e5-417f-87d8-9345da0b33bc" LastKnownName="KarateSenseIntelligenceCore" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="5c269d1e-631f-430a-8ef1-c5a0c74e9e8d" name="record/save motion data" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="effd966b-6e60-4406-8c2c-f24fc8789a75" />
+        <extendedCases>
+          <extend Id="ce4f49a4-0a5e-4a21-9484-2fe391203936">
+            <useCaseMoniker Id="4108cb58-3180-4464-84b4-2c9fcaa20cf4" LastKnownName="Capture Motion" />
+            <elementDefinition Id="6373e629-db64-4362-9716-9cf759931731" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="5f3c9856-70e5-417f-87d8-9345da0b33bc" LastKnownName="KarateSenseIntelligenceCore" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="29b3571d-07fc-4b40-8872-8bc8c423a206" name="KarateSenseI">
+    <elementDefinition Id="a5538d8d-16c9-4aea-92ec-64ecec09ae66" />
+    <profileInstances>
+      <packageHasProfileInstances Id="cf7596e6-b7e4-4927-af38-37e07e52dcd2">
+        <profileInstance Id="9235619a-a20c-4746-9019-33bd722dd2f7" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="1cda069c-89ba-48c0-968c-dc1ebbdb8a62">
+        <profileInstance Id="b202ae7a-11c1-44fd-a613-5dbd331e64b8" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

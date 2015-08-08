@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="42123f42-af32-4ae9-ae35-2c5af2c78111" name="KarateSenseIntelligence" linkedPackageId="44a41409-8ef0-4d98-8ffc-111a784d4bd5" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ef75c6a2-9bb6-425f-a6b5-a3c8304e0ea1" name="MSKinect" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b781cc9c-7784-4762-9737-baaec67b6187" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="02e3e27c-f532-4d28-b09d-5f665eb3b833" name="Data3D" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="704a7c01-0e23-496d-90c8-a87367a80fab" />
+        <targetEnds>
+          <association Id="fe35eff9-b47f-486e-ad15-306465fdf37f" isDerived="false" sourceEndRoleName="Data3D" targetEndRoleName="MSKinect" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ef75c6a2-9bb6-425f-a6b5-a3c8304e0ea1" LastKnownName="MSKinect" />
+            <description>makes a request for a updated frame
+</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0b45c7af-85b8-4a35-82cd-fa193c87502c" name="Data3D" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f999b882-8ddb-48fb-bb75-384242569aa9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4490a116-7483-4727-9bef-67f2c00cf561" name="MSKinect" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="94b69780-1f94-4368-b3f9-461d25344eaf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="82d23bdd-b4dc-47c1-8b08-8198a1df5e83" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1c40492f-459a-48ac-841e-4d7953ced6e0" name="DataAnalysis" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1ec65b0a-8762-4bdc-8ae0-57ae6c04ae1e" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="669c46b7-b91c-4ba1-b240-66df76b36ae7" name="Biometric" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f09f20b7-c728-48db-b5e2-cda0565cfab9" />
+        <generalsInternal>
+          <generalization Id="c39864c6-b13a-419b-9dec-aff7e577a715" isSubstitutable="false">
+            <classMoniker Id="1c40492f-459a-48ac-841e-4d7953ced6e0" LastKnownName="DataAnalysis" />
+            <elementDefinition Id="31ed9aa6-6d3a-4b5a-ad91-591c31905def" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="23c87b4a-cc6d-42ae-bf37-2fcf4db4fed9" isDerived="false" sourceEndRoleName="Biometric" targetEndRoleName="Data3D" isLeaf="false" isAbstract="false">
+            <classMoniker Id="02e3e27c-f532-4d28-b09d-5f665eb3b833" LastKnownName="Data3D" />
+            <description>waits for a complete frame</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e5199e30-6d13-4788-988f-eac5549c29ef" name="Biometric" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c1ef1c6a-433e-4ae2-a982-042a6f9aec0d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8c26376c-f19b-4087-a803-b9a86690bd9f" name="Data3D" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1fde7f5d-c3aa-4c2a-92b0-d5f70221fc5f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c3eb9a08-c2af-47ad-89d1-62a99f340213" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f029bc68-9b68-40b0-9e51-c607b1cc86ac" name="KeyValue" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bf3e41b4-664b-4607-a9d9-a11379e6f21d" />
+        <generalsInternal>
+          <generalization Id="507931fc-38bb-4609-8ede-c6f5f5e552b2" isSubstitutable="false">
+            <classMoniker Id="1c40492f-459a-48ac-841e-4d7953ced6e0" LastKnownName="DataAnalysis" />
+            <elementDefinition Id="5f41f04a-409d-4d4f-9b5a-78ff9072d7dc" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="df721707-cb5d-4a7f-9aaf-e603c1dd1799" isDerived="false" sourceEndRoleName="KeyValue" targetEndRoleName="Data3D" isLeaf="false" isAbstract="false">
+            <classMoniker Id="02e3e27c-f532-4d28-b09d-5f665eb3b833" LastKnownName="Data3D" />
+            <description>waits for a complete frame</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5ab85a28-c604-4d9f-a263-b2b23af13929" name="KeyValue" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a9f47c49-8b0e-478c-93c3-fc41e8f9df28" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="37720577-d968-443e-a949-94e8fc524ead" name="Data3D" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="95d2acd7-96a4-4ce5-8b50-f82fb6a05a92" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2dd0bb98-d333-4237-867c-f5d97fa871ee" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="91d1e614-356e-4da9-ac64-a4ba5523559a" name="NeuronDataReaderWraper">
+        <elementDefinition Id="e68dd3de-36bd-49be-be24-14c9f70bc876" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="93a681b6-f7d1-4f59-8874-607c93e6e29e" name="PNSensor" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="5dc9d460-5dba-4966-b607-7b1f7384ecc7" />
+              <ownedAttributesInternal>
+                <property Id="2ea0c7bc-2997-407e-b402-9432fdd56b18" name="bvhData::" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d3a4dbd2-4753-4a90-95c9-8daa4c3695ee" />
+                </property>
+                <property Id="52d15876-66e4-431b-81ba-b6795b5bd131" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="08a9b0eb-c07b-4ee5-b254-e01eced58ee9" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="cebaa2dc-c5b5-400d-90f2-65a2919da92f" name="readBVH" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c11fc831-a6c1-4f80-9ad5-bb646035c8a7" />
+                </operation>
+                <operation Id="95611126-ca65-403e-b4f3-5ac02befb042" name="isFrameUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e77e08de-7005-4f8e-952c-2470408b3b9d" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <enumeration Id="7beaea75-b06a-4112-9cba-2453d73974ec" name="SocketStatus" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="4e427dcd-979d-4546-8cfa-7c8284c319dd" />
+              <ownedLiterals>
+                <enumerationLiteral Id="bc0e2d81-d08d-4002-86ed-a06e0dac9847" name="CS_Running">
+                  <elementDefinition Id="da0d94ca-01b6-492f-b8be-cd38546c6c67" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="f97fa194-43b0-4523-983a-ec03754401f6" name="CS_Starting">
+                  <elementDefinition Id="5f3e2738-ca08-4f25-9870-a6fe3dc88649" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="39f58d8f-01f9-4fe2-844a-723b29a96948" name="CS_OffWork">
+                  <elementDefinition Id="671a6dde-f90e-4273-ac34-f4d5d452ece5" />
+                </enumerationLiteral>
+              </ownedLiterals>
+            </enumeration>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <enumeration Id="7de95c53-2fb1-405d-b475-89aeed1ccd40" name="DataVersion" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="990b06c3-4e56-4dfc-b336-f91ff5070799" />
+              <ownedLiterals>
+                <enumerationLiteral Id="f6989264-5218-4bfd-b7c4-84f132910072" name="BuildNumb:byte">
+                  <elementDefinition Id="27ba0eb5-8453-4a5c-8320-59bb295bec9a" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="f84592c0-b148-4fd6-9cbd-669af459514e" name="Revision:byte">
+                  <elementDefinition Id="98eb3f0e-fb81-4440-a4e3-301bcfc34953" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="b5eb497b-a4d0-4d83-83dc-082cb7eb52cf" name="Minor:byte">
+                  <elementDefinition Id="6c9bcc83-b882-47ac-9f8c-06b696348e05" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="98dc74aa-ca40-4af6-83b0-0a57790382be" name="Major:byte">
+                  <elementDefinition Id="c19a0eea-5707-4060-911a-908b069464c2" />
+                </enumerationLiteral>
+              </ownedLiterals>
+            </enumeration>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="44a41409-8ef0-4d98-8ffc-111a784d4bd5" name="KarateSenseI">
+    <elementDefinition Id="a5538d8d-16c9-4aea-92ec-64ecec09ae66" />
+    <profileInstances>
+      <packageHasProfileInstances Id="36cd8b20-8dbc-4c11-9040-c4adcfa0517c">
+        <profileInstance Id="36c68d15-846e-4bb0-93bd-ce06fe3749c0" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="1ca116cb-f442-4cd9-9445-1f83bb5e21c1">
+        <profileInstance Id="d7f9ff56-0a76-4881-9f33-f06c906bf8e6" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

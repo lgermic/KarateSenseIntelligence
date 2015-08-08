@@ -1,0 +1,882 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="a5538d8d-16c9-4aea-92ec-64ecec09ae66"
+  name="KarateSenseI" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="f5ea5082-9cd3-4fe4-8293-df2cfc6c095f">
+      <body>If keyValues wanted to be displayed</body>
+    </comment>
+    <comment
+      Id="80414977-0138-47bc-b849-2b95a3e1a508" />
+    <comment
+      Id="9bb2ee41-945c-455a-888a-3095bfaa46e5" />
+    <comment
+      Id="89131ed5-8b01-4432-945d-98285d33ea1e">
+      <body>depends</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="b781cc9c-7784-4762-9737-baaec67b6187"
+        name="MSKinect"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="704a7c01-0e23-496d-90c8-a87367a80fab"
+        name="Data3D"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="82d23bdd-b4dc-47c1-8b08-8198a1df5e83"
+            isDerived="false"
+            sourceEndRoleName="Data3D"
+            targetEndRoleName="MSKinect"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b781cc9c-7784-4762-9737-baaec67b6187"
+              LastKnownName="MSKinect"
+              LastKnownLocation="KarateSenseI.uml" />
+            <description>makes a request for a updated frame
+</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f999b882-8ddb-48fb-bb75-384242569aa9"
+                  name="Data3D"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="94b69780-1f94-4368-b3f9-461d25344eaf"
+                  name="MSKinect"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1ec65b0a-8762-4bdc-8ae0-57ae6c04ae1e"
+        name="DataAnalysis"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f09f20b7-c728-48db-b5e2-cda0565cfab9"
+        name="Biometric"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="31ed9aa6-6d3a-4b5a-ad91-591c31905def"
+            isSubstitutable="false">
+            <classMoniker
+              Id="1ec65b0a-8762-4bdc-8ae0-57ae6c04ae1e"
+              LastKnownName="DataAnalysis"
+              LastKnownLocation="KarateSenseI.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="c3eb9a08-c2af-47ad-89d1-62a99f340213"
+            isDerived="false"
+            sourceEndRoleName="Biometric"
+            targetEndRoleName="Data3D"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="704a7c01-0e23-496d-90c8-a87367a80fab"
+              LastKnownName="Data3D"
+              LastKnownLocation="KarateSenseI.uml" />
+            <description>waits for a complete frame</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c1ef1c6a-433e-4ae2-a982-042a6f9aec0d"
+                  name="Biometric"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1fde7f5d-c3aa-4c2a-92b0-d5f70221fc5f"
+                  name="Data3D"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bf3e41b4-664b-4607-a9d9-a11379e6f21d"
+        name="KeyValue"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="5f41f04a-409d-4d4f-9b5a-78ff9072d7dc"
+            isSubstitutable="false">
+            <classMoniker
+              Id="1ec65b0a-8762-4bdc-8ae0-57ae6c04ae1e"
+              LastKnownName="DataAnalysis"
+              LastKnownLocation="KarateSenseI.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="2dd0bb98-d333-4237-867c-f5d97fa871ee"
+            isDerived="false"
+            sourceEndRoleName="KeyValue"
+            targetEndRoleName="Data3D"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="704a7c01-0e23-496d-90c8-a87367a80fab"
+              LastKnownName="Data3D"
+              LastKnownLocation="KarateSenseI.uml" />
+            <description>waits for a complete frame</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a9f47c49-8b0e-478c-93c3-fc41e8f9df28"
+                  name="KeyValue"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="95d2acd7-96a4-4ce5-8b50-f82fb6a05a92"
+                  name="Data3D"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e68dd3de-36bd-49be-be24-14c9f70bc876"
+        LastKnownName="NeuronDataReaderWraper"
+        LastKnownLocation="Package_2303.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="d08aa033-a4b3-4911-84a9-d39befe11ab3"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="a4adce48-bce0-4736-885d-c8dce68da453"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="VisualInspection"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="cc0a773d-16bf-4ecf-a3a5-9e8b2630b038"
+              LastKnownName="VisualInspection"
+              LastKnownLocation="KarateSenseI.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b3e57c66-4210-408f-a3c0-786bcfce3713"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="768d433b-9de4-41ed-839c-da63074c1e55"
+                  name="VisualInspection"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="81c8eb6e-e7ba-4878-ba26-3d7ecdca51b3"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="keyValueExtraction"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="46166d2f-ea1c-450f-8598-0bf433d9291c"
+              LastKnownName="keyValueExtraction"
+              LastKnownLocation="KarateSenseI.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1c984720-1b30-40e1-880b-db017a71712e"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ed12f718-c541-4be3-942b-057acc76bf8e"
+                  name="keyValueExtraction"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cc0a773d-16bf-4ecf-a3a5-9e8b2630b038"
+        name="VisualInspection"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="38e0f63d-c324-41c5-9452-55facc35fb10"
+        name="Subsystem1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="47bbcba0-43fb-4ad1-8240-d81068b8ba1f"
+        name="Actor1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="46166d2f-ea1c-450f-8598-0bf433d9291c"
+        name="keyValueExtraction"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="5eaa9160-efb5-4805-b6b4-15a0d0fb0fd5"
+        name="Actor2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="d1a0e98c-0c38-4b7f-938b-ac07cab44fbe"
+        name="KarataSenseIntelligence"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8eb6b3d9-b4e8-436f-83d1-81b927e32d42"
+        name="Visual Inspection: motion"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="ee1687d1-33c3-4c44-bbc4-449dc6c61d6d">
+            <useCaseMoniker
+              Id="7295c296-946e-48ae-9641-68c45b4990d8"
+              LastKnownName="keyValue extraction"
+              LastKnownLocation="KarateSenseI.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="a65b0983-27c9-46c0-82dc-e9a108bbdefd"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="5ecb4baf-7858-4565-9da6-db81b1333191"
+            isDerived="false"
+            sourceEndRoleName="Actor3"
+            targetEndRoleName="Visual Inspection"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8eb6b3d9-b4e8-436f-83d1-81b927e32d42"
+              LastKnownName="Visual Inspection: motion"
+              LastKnownLocation="KarateSenseI.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="af28e47c-db4d-41b7-8405-f81ce3318921"
+                  name="Actor3"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="49444a69-8ff6-41a9-acf5-7f79185926fc"
+                  name="Visual Inspection"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f40fd0c5-2f96-48cd-b5ad-f7c04c270ee3"
+            isDerived="false"
+            sourceEndRoleName="Actor3"
+            targetEndRoleName="MotionCapturing"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="9c0e01a3-58a0-4fd0-ab60-7bcf2ac06b6b"
+              LastKnownName="Capture Motion"
+              LastKnownLocation="KarateSenseI.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d68caa22-eaac-454e-af33-f251eaad4a11"
+                  name="Actor3"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f575c9b0-3a10-4f6a-98c7-2a5fae91d7b8"
+                  name="MotionCapturing"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="54b50513-c1dc-4a4b-9154-fec644edec05"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Visualize"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="cda98a99-93e5-4f56-9ca0-afba5fc80fb5"
+              LastKnownName="Visualize"
+              LastKnownLocation="KarateSenseI.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0d8c5f84-6f67-435e-9901-f88ece75a1a8"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3f6b1e24-1af7-41c7-9643-ecb9be0b7aef"
+                  name="Visualize"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7295c296-946e-48ae-9641-68c45b4990d8"
+        name="keyValue extraction"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f58fbb56-89e4-47fc-a34e-e0328e8e61da"
+        name="Recording"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="041d1c45-86c5-42d5-97dc-b98e8375a8b6">
+            <useCaseMoniker
+              Id="8eb6b3d9-b4e8-436f-83d1-81b927e32d42"
+              LastKnownName="Visual Inspection: motion"
+              LastKnownLocation="KarateSenseI.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="78c74d60-738e-41d2-8291-64d8da8cd786"
+        name="KarateSenseIntelligenceCore"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="518d3b4e-ba18-42cc-8b2a-18a51ce2f21c"
+        name="AXIS Neuron"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9c0e01a3-58a0-4fd0-ab60-7bcf2ac06b6b"
+        name="Capture Motion"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="7e575d23-7ef8-456e-b3b4-39b59bf506f3"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="f144296e-ae81-42cc-9720-0321ab3a177a"
+              LastKnownName="motion data"
+              LastKnownLocation="KarateSenseI.uml" />
+          </generalization>
+        </generalsInternal>
+        <additions>
+          <include
+            Id="8598e705-21de-4e72-b5d7-fa6b2fd75dc1">
+            <useCaseMoniker
+              Id="a88ba4b1-d559-4a16-ab9b-6a0d8d94bf75"
+              LastKnownName="Reconstruction 3D Frame"
+              LastKnownLocation="KarateSenseI.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="78c74d60-738e-41d2-8291-64d8da8cd786"
+            LastKnownName="KarateSenseIntelligenceCore"
+            LastKnownLocation="KarateSenseI.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a88ba4b1-d559-4a16-ab9b-6a0d8d94bf75"
+        name="Reconstruction 3D Frame"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="97e18bc7-b74f-4e5c-86f9-7f17fdd337f7">
+            <useCaseMoniker
+              Id="397af0d3-9daa-440d-9cb0-c2b03452e3fe"
+              LastKnownName="Reconstruct motion data"
+              LastKnownLocation="KarateSenseI.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="78c74d60-738e-41d2-8291-64d8da8cd786"
+            LastKnownName="KarateSenseIntelligenceCore"
+            LastKnownLocation="KarateSenseI.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="397af0d3-9daa-440d-9cb0-c2b03452e3fe"
+        name="Reconstruct motion data"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="518d3b4e-ba18-42cc-8b2a-18a51ce2f21c"
+            LastKnownName="AXIS Neuron"
+            LastKnownLocation="KarateSenseI.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ad23b8c3-706a-4d05-abba-8242c9b08a60"
+        name="Reconstruct Surface data"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="f5ffe458-8430-4c8e-94b1-d42ebcb5e4b5">
+            <useCaseMoniker
+              Id="a88ba4b1-d559-4a16-ab9b-6a0d8d94bf75"
+              LastKnownName="Reconstruction 3D Frame"
+              LastKnownLocation="KarateSenseI.uml" />
+            <description>if kinect surface reconstruction is enabled</description>
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="78c74d60-738e-41d2-8291-64d8da8cd786"
+            LastKnownName="KarateSenseIntelligenceCore"
+            LastKnownLocation="KarateSenseI.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cda98a99-93e5-4f56-9ca0-afba5fc80fb5"
+        name="Visualize"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="8d0fb36c-a225-48cf-bf79-157f107038bb"
+            name="depends">
+            <useCaseMoniker
+              Id="f144296e-ae81-42cc-9720-0321ab3a177a"
+              LastKnownName="motion data"
+              LastKnownLocation="KarateSenseI.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="78c74d60-738e-41d2-8291-64d8da8cd786"
+            LastKnownName="KarateSenseIntelligenceCore"
+            LastKnownLocation="KarateSenseI.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cc1c925a-7454-442a-a00c-b541ed46ebb8"
+        name="Extract biometrics"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="9143c004-72fc-42ed-9324-d5c504fae230"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="ed9c7897-f189-40bc-ad5b-ef7acba71295"
+              LastKnownName="Analysis of data"
+              LastKnownLocation="KarateSenseI.uml" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="78c74d60-738e-41d2-8291-64d8da8cd786"
+            LastKnownName="KarateSenseIntelligenceCore"
+            LastKnownLocation="KarateSenseI.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ed9c7897-f189-40bc-ad5b-ef7acba71295"
+        name="Analysis of data"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="78c74d60-738e-41d2-8291-64d8da8cd786"
+            LastKnownName="KarateSenseIntelligenceCore"
+            LastKnownLocation="KarateSenseI.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="75b75c1f-16f5-4678-9ead-651f99c01201"
+        name="Extract keyValues  "
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="64380114-f9a8-4020-8d7c-eee731e72714"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="ed9c7897-f189-40bc-ad5b-ef7acba71295"
+              LastKnownName="Analysis of data"
+              LastKnownLocation="KarateSenseI.uml" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="78c74d60-738e-41d2-8291-64d8da8cd786"
+            LastKnownName="KarateSenseIntelligenceCore"
+            LastKnownLocation="KarateSenseI.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b0f6c833-8fc9-4326-b2cf-21ffbe37eed9"
+        name="Visualize Motion"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="bb77fee6-c786-4a1b-8e22-42560211d7b5"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="cda98a99-93e5-4f56-9ca0-afba5fc80fb5"
+              LastKnownName="Visualize"
+              LastKnownLocation="KarateSenseI.uml" />
+          </generalization>
+        </generalsInternal>
+        <additions>
+          <include
+            Id="a223537b-86e5-4684-b9cc-8bea184601d1">
+            <useCaseMoniker
+              Id="a88ba4b1-d559-4a16-ab9b-6a0d8d94bf75"
+              LastKnownName="Reconstruction 3D Frame"
+              LastKnownLocation="KarateSenseI.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="78c74d60-738e-41d2-8291-64d8da8cd786"
+            LastKnownName="KarateSenseIntelligenceCore"
+            LastKnownLocation="KarateSenseI.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f08bfa88-8671-48e5-b04d-9d19e7912d6b"
+        name="Visualize observables"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="f1ea92da-fd58-46d7-8b07-6dd6dc74fa8b"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="cda98a99-93e5-4f56-9ca0-afba5fc80fb5"
+              LastKnownName="Visualize"
+              LastKnownLocation="KarateSenseI.uml" />
+          </generalization>
+        </generalsInternal>
+        <additions>
+          <include
+            Id="a44648d5-0f51-45c1-88d9-c16fe001acf9">
+            <useCaseMoniker
+              Id="ed9c7897-f189-40bc-ad5b-ef7acba71295"
+              LastKnownName="Analysis of data"
+              LastKnownLocation="KarateSenseI.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="78c74d60-738e-41d2-8291-64d8da8cd786"
+            LastKnownName="KarateSenseIntelligenceCore"
+            LastKnownLocation="KarateSenseI.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a71de3e4-90bb-46d5-9151-8e314ff4bd63"
+        name="Load motion data"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="b464a5aa-8cab-46bd-9de1-022153fecd27"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="f144296e-ae81-42cc-9720-0321ab3a177a"
+              LastKnownName="motion data"
+              LastKnownLocation="KarateSenseI.uml" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="78c74d60-738e-41d2-8291-64d8da8cd786"
+            LastKnownName="KarateSenseIntelligenceCore"
+            LastKnownLocation="KarateSenseI.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="517d307a-b58d-4aa2-89d4-ab9728a11d25"
+        name="Motion data"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f144296e-ae81-42cc-9720-0321ab3a177a"
+        name="motion data"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="78c74d60-738e-41d2-8291-64d8da8cd786"
+            LastKnownName="KarateSenseIntelligenceCore"
+            LastKnownLocation="KarateSenseI.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="effd966b-6e60-4406-8c2c-f24fc8789a75"
+        name="record/save motion data"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="6373e629-db64-4362-9716-9cf759931731">
+            <useCaseMoniker
+              Id="9c0e01a3-58a0-4fd0-ab60-7bcf2ac06b6b"
+              LastKnownName="Capture Motion"
+              LastKnownLocation="KarateSenseI.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="78c74d60-738e-41d2-8291-64d8da8cd786"
+            LastKnownName="KarateSenseIntelligenceCore"
+            LastKnownLocation="KarateSenseI.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
