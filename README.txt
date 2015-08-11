@@ -8,9 +8,8 @@ README.txt		KarateSenseIntelligence
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
-This is the README.txt of the KarateSenseIntelligence (KarateSenseI) project. The KarateSenseI projects aims
-to provide a environment for Karate athlets to study and quantify their performances. The environment provides 
-hardware and software based blocks.
+The KarateSenseI projects aims to provide an environment for Karate athlets to study and quantify their performances. 
+The environment provides hardware and software based blocks.
 
 Specification:
  - Perception Neuron System by NOITOM (c) for motion capturing - up to 120 fps
@@ -22,26 +21,16 @@ Specification:
 
 Top abstraction Layer of the environment:
 
-					|--------------------|	
-					|		     |
-					|   KarateSenseI     |
-					|                    |
-					|--------------------|
-					/		     \
-			      	       /		      \
-			    	      /			       \
-		|--------------------|				|--------------------|					
-		|		     |				|		     |				
-		|      Hardware      |				|      Software      |
-		|                    |				|                    |
-		|--------------------|				|--------------------|-----------------------------
-		/		     \				/		     \                             \   
-	       /                      \			       /		      \                             \
-              /                        \		      /			       \                             \
-|--------------------| 		|--------------------|       |--------------------|     |--------------------|     |--------------------|
-|   PN by NOITOM (c) |		|  Kinect for XboX   |       |   Axis Neuron (c)  |     |   Kinect SDK v1.8  |     |Point Cloud Library |
-|(Perception Neuron) |		|     or Windows     |       |     by NOITOM      |     |     by Mircosoft   |     |        v1.6        |
-| 		     |		|   by Microsoft (c) |       |                    |     |                    |     |                    |
-|--------------------|		|--------------------|       |--------------------|     |--------------------|     |--------------------| 
+KarateSenseI    
+	|--->	Hardware
+	|	|--->	PN by NOITOM (c) (Perception Neuron) 
+	|	|--->	Kinect for XboX or Windows by Microsoft (c)  
+	|
+	|
+	|--->	Software
+	|	|--->	Axis Neuron (c) by NOITOM      
+	|	|---> 	Kinect SDK v1.8 by Mircosoft   
+	|	|--->	Point Cloud Library v1.6 
 
 
+contact: Leonard Germic (germic@physik.uni-bonn.de)
