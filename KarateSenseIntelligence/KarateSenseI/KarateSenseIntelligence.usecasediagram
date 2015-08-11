@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="14a1e4a6-825a-4e3a-8562-48347b65656a" name="UMLUseCaseDiagram1" linkedPackageId="29b3571d-07fc-4b40-8872-8bc8c423a206" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="14a1e4a6-825a-4e3a-8562-48347b65656a" name="UMLUseCaseDiagram1" linkedPackageId="29b3571d-07fc-4b40-8872-8bc8c423a206" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <ownedCommentsInternal>
     <comment Id="9be598dc-5f42-47b3-9246-294155d59061">
       <elementDefinition Id="80414977-0138-47bc-b849-2b95a3e1a508" />
@@ -65,12 +65,6 @@
     <packageHasNamedElement>
       <useCase Id="4108cb58-3180-4464-84b4-2c9fcaa20cf4" name="Capture Motion" isAbstract="false" isLeaf="false">
         <elementDefinition Id="9c0e01a3-58a0-4fd0-ab60-7bcf2ac06b6b" />
-        <generalsInternal>
-          <generalization Id="d5f25bd4-f342-4332-aa9f-a175321a8fcf" isSubstitutable="false">
-            <useCaseMoniker Id="1fb5b85a-e3e4-42b0-ba7e-03170fb5a889" LastKnownName="motion data" />
-            <elementDefinition Id="7e575d23-7ef8-456e-b3b4-39b59bf506f3" />
-          </generalization>
-        </generalsInternal>
         <additions>
           <include Id="3b9517b1-53f7-4826-888e-133acfec38de">
             <useCaseMoniker Id="d79fffa2-e7c8-4782-ad73-f1e68d91a1d8" LastKnownName="Reconstruction 3D Frame" />
@@ -122,12 +116,6 @@
     <packageHasNamedElement>
       <useCase Id="59679f89-300e-4956-b7b8-c56d470dadde" name="Visualize" isAbstract="false" isLeaf="false">
         <elementDefinition Id="cda98a99-93e5-4f56-9ca0-afba5fc80fb5" />
-        <suppliersInternal>
-          <dependency Id="b240f8be-f035-4709-8290-f29286014cd2" name="depends">
-            <useCaseMoniker Id="1fb5b85a-e3e4-42b0-ba7e-03170fb5a889" LastKnownName="motion data" />
-            <elementDefinition Id="8d0fb36c-a225-48cf-bf79-157f107038bb" />
-          </dependency>
-        </suppliersInternal>
         <subjects>
           <subsystemMoniker Id="5f3c9856-70e5-417f-87d8-9345da0b33bc" LastKnownName="KarateSenseIntelligenceCore" />
         </subjects>
@@ -212,20 +200,12 @@
     <packageHasNamedElement>
       <useCase Id="c94b02fe-9ac9-42b5-bcc8-20d11f59d71e" name="Load motion data" isAbstract="false" isLeaf="false">
         <elementDefinition Id="a71de3e4-90bb-46d5-9151-8e314ff4bd63" />
-        <generalsInternal>
-          <generalization Id="dbbe303f-826b-461d-81b5-b466b30d9204" isSubstitutable="false">
-            <useCaseMoniker Id="1fb5b85a-e3e4-42b0-ba7e-03170fb5a889" LastKnownName="motion data" />
-            <elementDefinition Id="b464a5aa-8cab-46bd-9de1-022153fecd27" />
-          </generalization>
-        </generalsInternal>
-        <subjects>
-          <subsystemMoniker Id="5f3c9856-70e5-417f-87d8-9345da0b33bc" LastKnownName="KarateSenseIntelligenceCore" />
-        </subjects>
-      </useCase>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <useCase Id="1fb5b85a-e3e4-42b0-ba7e-03170fb5a889" name="motion data" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="f144296e-ae81-42cc-9720-0321ab3a177a" />
+        <extendedCases>
+          <extend Id="25eee56d-8a70-4b7c-aedc-e1d7915105e0">
+            <useCaseMoniker Id="4108cb58-3180-4464-84b4-2c9fcaa20cf4" LastKnownName="Capture Motion" />
+            <elementDefinition Id="325706b6-78e9-4b42-9c95-f5816c63889a" />
+          </extend>
+        </extendedCases>
         <subjects>
           <subsystemMoniker Id="5f3c9856-70e5-417f-87d8-9345da0b33bc" LastKnownName="KarateSenseIntelligenceCore" />
         </subjects>

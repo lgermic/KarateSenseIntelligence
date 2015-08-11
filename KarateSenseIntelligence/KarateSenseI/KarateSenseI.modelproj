@@ -22,18 +22,25 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="KarateSenseIntelligence.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="KarateSenseIntelligence.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>KarateSenseIntelligence.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\Package_1517.uml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Package_2303.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UMLUseCaseDiagram1.usecasediagram">
+    <Content Include="KarateSenseIntelligence.usecasediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UMLUseCaseDiagram1.usecasediagram.layout">
+    <Content Include="KarateSenseIntelligence.usecasediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>UMLUseCaseDiagram1.usecasediagram</DependentUpon>
+      <DependentUpon>KarateSenseIntelligence.usecasediagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="KarateSenseIntelligence.classdiagram">
