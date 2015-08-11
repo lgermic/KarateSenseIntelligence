@@ -3,6 +3,16 @@
   dslVersion="1.0.0.0"
   Id="e68dd3de-36bd-49be-be24-14c9f70bc876"
   name="NeuronDataReaderWraper" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <importedPackagesInternal>
+    <packageImport
+      Id="ac7298ea-5efb-4010-a580-e99f21b195b8"
+      visibility="Public">
+      <packageMoniker
+        Id="6063a382-c26c-48d7-9fac-9a22e1a77e98"
+        LastKnownName="Package1"
+        LastKnownLocation="Package_1517.uml" />
+    </packageImport>
+  </importedPackagesInternal>
   <packagedElements>
     <packageHasNamedElement>
       <class
@@ -13,7 +23,7 @@
         isActiveClass="false">
         <targetEnds>
           <association
-            Id="b0e25d8a-d624-47ee-a633-b713afeccc91"
+            Id="9ceacb5b-3c33-4a9a-ae7e-e1101cf986cb"
             isDerived="false"
             sourceEndRoleName="PNSensor"
             targetEndRoleName="motionData"
@@ -22,11 +32,11 @@
             <classMoniker
               Id="f3cacd9c-3d67-4c59-a9d6-f885cc2e37ca"
               LastKnownName="motionData"
-              LastKnownLocation="KarateSenseI.uml" />
+              LastKnownLocation="Package_1517.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="3a664559-a308-4cc1-aae8-588f3947b1ca"
+                  Id="e0cb35fd-194d-4d3b-9311-e372d8c4d8d7"
                   name="PNSensor"
                   isLeaf="false"
                   isStatic="false"
@@ -39,7 +49,7 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="3ecad64f-9185-4025-9578-37aaacc0e7a4"
+                  Id="777c91e0-5954-4f52-9937-3ab7ddce6c58"
                   name="motionData"
                   isLeaf="false"
                   isStatic="false"
