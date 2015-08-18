@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="6063a382-c26c-48d7-9fac-9a22e1a77e98"
   name="KarateSenseIntelligence" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -117,6 +117,14 @@
           <operation
             Id="e3a9fd84-1e9e-457e-b973-be8e67f2e8fc"
             name="getFrame"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c16f8c68-2227-4ebe-b2a0-18c0905a8697"
+            name="wait"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -304,6 +312,14 @@
           <operation
             Id="0edd02d8-4c2b-4eb6-b60c-c0d11704c6ef"
             name="getTimeID"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9dee092e-b84e-40c1-b532-a43d94f0f2e6"
+            name="wait"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -723,6 +739,22 @@
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="a6e610c0-2a07-4385-a696-8341ccd18031"
+            name="updateData"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a17256fe-225e-4136-ae4b-c75a4936cbca"
+            name="show"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -839,6 +871,14 @@
           <operation
             Id="fd1c43a0-9019-4b3b-bdfa-66ba6c433ef0"
             name="getFrame"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3d727360-c474-4c18-b1e7-1e14985e8a25"
+            name="wait"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1221,6 +1261,14 @@
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="8222867d-722d-404f-94fe-b28f4d4e7684"
+            name="wait"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -1318,6 +1366,22 @@
           <operation
             Id="9c0ec93f-3b78-4b6f-8d50-e0993cb05390"
             name="save"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f4572ffe-a058-4848-9cff-75eb12abdc0f"
+            name="updateData"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9642f2f0-f909-47cc-81a3-f57ff5ef3ff0"
+            name="show"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1455,6 +1519,22 @@
             isAbstract="true"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="cd630deb-88e4-453d-957b-06182669b388"
+            name="updateData"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b943cb74-bef8-465f-82ca-b156cdfc022a"
+            name="show"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperations>
       </Interface>
     </packageHasNamedElement>
@@ -1500,6 +1580,14 @@
           <operation
             Id="5ac1385e-72f0-4225-88d6-7468d6c16ef1"
             name="getFrame"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e8070a1a-d9cb-439b-853a-ef7838ab71b0"
+            name="wait"
             isLeaf="false"
             isStatic="false"
             isAbstract="true"
@@ -1659,10 +1747,10 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="b5e7516c-5446-45b8-83a7-9c88d6e9539a"
-                LastKnownName="byte[]"
-                LastKnownLocation="KarateSenseI.uml" />
+              <classMoniker
+                Id="736e30f0-d839-49f2-b293-8ec21866c76c"
+                LastKnownName="dataHeader"
+                LastKnownLocation="Package_1517.uml" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>

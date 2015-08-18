@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="42123f42-af32-4ae9-ae35-2c5af2c78111" name="KarateSenseIntelligence" linkedPackageId="44a41409-8ef0-4d98-8ffc-111a784d4bd5" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="42123f42-af32-4ae9-ae35-2c5af2c78111" name="KarateSenseIntelligence" linkedPackageId="44a41409-8ef0-4d98-8ffc-111a784d4bd5" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasPackages>
       <package Id="91d1e614-356e-4da9-ac64-a4ba5523559a" name="NeuronDataReaderWraper">
@@ -163,6 +163,9 @@
                 <operation Id="beae07dd-25c8-45f7-a15f-681b826c5eb0" name="getFrame" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="e3a9fd84-1e9e-457e-b973-be8e67f2e8fc" />
                 </operation>
+                <operation Id="7eb7d9fe-257c-4f09-a48c-9ec8d2f2d6db" name="wait" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c16f8c68-2227-4ebe-b2a0-18c0905a8697" />
+                </operation>
               </ownedOperationsInternal>
             </class>
           </packageHasNamedElement>
@@ -243,6 +246,9 @@
                 </operation>
                 <operation Id="d83b1a78-47ac-413f-b66a-ad98ddb0f02d" name="getTimeID" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="0edd02d8-4c2b-4eb6-b60c-c0d11704c6ef" />
+                </operation>
+                <operation Id="acb03b76-5e95-45bb-ac13-8ef374ff8607" name="wait" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="9dee092e-b84e-40c1-b532-a43d94f0f2e6" />
                 </operation>
               </ownedOperationsInternal>
             </class>
@@ -424,6 +430,12 @@
                 <operation Id="11d41406-66c3-4546-a599-84d41812ce43" name="save" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="4fb85893-fefd-4d5d-81bd-8cf620b8fee4" />
                 </operation>
+                <operation Id="b8f2319a-c676-4eec-8867-87dc64b1a25f" name="updateData" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="a6e610c0-2a07-4385-a696-8341ccd18031" />
+                </operation>
+                <operation Id="2be59c22-8521-488b-8acc-4a56863c7e4e" name="show" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="a17256fe-225e-4136-ae4b-c75a4936cbca" />
+                </operation>
               </ownedOperationsInternal>
             </class>
           </packageHasNamedElement>
@@ -477,6 +489,9 @@
                 </operation>
                 <operation Id="d2eee340-87f3-4f40-818b-a2a8421f85cb" name="getFrame" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="fd1c43a0-9019-4b3b-bdfa-66ba6c433ef0" />
+                </operation>
+                <operation Id="a9cdcad4-6858-473e-8505-6e60894a8d8e" name="wait" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="3d727360-c474-4c18-b1e7-1e14985e8a25" />
                 </operation>
               </ownedOperationsInternal>
             </class>
@@ -599,6 +614,9 @@
                 <operation Id="5bad5052-1b4b-4838-9146-a5afdbd8c911" name="getFrame" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="4153e741-7d2b-4e1e-aad8-2049f49a6675" />
                 </operation>
+                <operation Id="1bd2f65d-f85a-4a1a-a425-0edb1bb59e5f" name="wait" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="8222867d-722d-404f-94fe-b28f4d4e7684" />
+                </operation>
               </ownedOperationsInternal>
             </class>
           </packageHasNamedElement>
@@ -639,6 +657,12 @@
                 <operation Id="5ae4990f-efd2-4ce7-aaf9-263903bd7f27" name="save" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="9c0ec93f-3b78-4b6f-8d50-e0993cb05390" />
                 </operation>
+                <operation Id="5679ae6d-c767-4ed6-85f1-69c997e84b15" name="updateData" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="f4572ffe-a058-4848-9cff-75eb12abdc0f" />
+                </operation>
+                <operation Id="395ae000-ac01-4120-8c2a-b2ad6156808f" name="show" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="9642f2f0-f909-47cc-81a3-f57ff5ef3ff0" />
+                </operation>
               </ownedOperationsInternal>
             </class>
           </packageHasNamedElement>
@@ -673,6 +697,12 @@
                 <operation Id="c475c6fb-3ab1-43b9-a7a0-c4fe48204133" name="save" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="5a9f2e5e-b645-4588-89ba-8b2913dc6ff7" />
                 </operation>
+                <operation Id="39b34f27-eb81-4189-92bb-c7775c40ed15" name="updateData" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="cd630deb-88e4-453d-957b-06182669b388" />
+                </operation>
+                <operation Id="758e0bc2-7090-4029-b9a0-9c4d680f84fb" name="show" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="b943cb74-bef8-465f-82ca-b156cdfc022a" />
+                </operation>
               </ownedOperations>
             </Interface>
           </packageHasNamedElement>
@@ -694,6 +724,9 @@
                 </operation>
                 <operation Id="e73e5e98-9dcc-4f11-8699-4180824e904f" name="getFrame" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="5ac1385e-72f0-4225-88d6-7468d6c16ef1" />
+                </operation>
+                <operation Id="c8bacbe1-5da8-463f-a104-c79beaf43c0f" name="wait" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e8070a1a-d9cb-439b-853a-ef7838ab71b0" />
                 </operation>
               </ownedOperations>
             </Interface>
@@ -753,7 +786,7 @@
                 <property Id="c5ef3bb2-d931-45e6-a83f-ff94f9813675" name="header" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="a7aa730e-9a81-4d7e-836c-c7726c5b028f" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="684296ab-45fa-4521-bd05-163ae9cad492" LastKnownName="byte[]" />
+                    <referencedTypeMoniker Id="cb21241a-9c93-47a5-a9c4-76d97c217bc2" LastKnownName="dataHeader" />
                   </type_NamedElement>
                 </property>
               </ownedAttributesInternal>
@@ -831,11 +864,6 @@
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="684296ab-45fa-4521-bd05-163ae9cad492" name="byte[]" isAbstract="false" isLeaf="false" cachedFullName="byte[]">
-        <elementDefinition Id="b5e7516c-5446-45b8-83a7-9c88d6e9539a" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="e7a4acbc-0cca-4f0f-97cd-960e554c5a18" name="enum" isAbstract="false" isLeaf="false" cachedFullName="enum">
         <elementDefinition Id="a31a7204-b82c-4d43-9024-d153fb01bb94" />
       </referencedType>
@@ -843,6 +871,11 @@
     <packageHasNamedElement>
       <referencedType Id="4d8ac202-2902-4fe3-b6fb-564481eade20" name="data3D" isAbstract="false" isLeaf="false" cachedFullName="KarateSenseI::KarateSenseIntelligence::data3D">
         <elementDefinition Id="083e64a0-253f-4ca8-981a-d34f29ef2833" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="cb21241a-9c93-47a5-a9c4-76d97c217bc2" name="dataHeader" isAbstract="false" isLeaf="false" cachedFullName="KarateSenseI::KarateSenseIntelligence::dataHeader">
+        <elementDefinition Id="736e30f0-d839-49f2-b293-8ec21866c76c" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
